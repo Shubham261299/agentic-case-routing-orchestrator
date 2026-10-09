@@ -1,3 +1,11 @@
+<div align="center">
+
+<img src=".github/banner.svg" width="100%" alt="Shubham AI Lab, system 01 of 07 (Docs Only · Source Proprietary): Case input → Router agent → Domain agents → Critic → Human approval → Outcome. Stack: LangGraph, FastAPI, Pydantic, Ollama, SQLite.">
+
+[🌐 Portfolio](https://shubham-ai-lab.vercel.app/) · [👤 GitHub profile](https://github.com/Shubham261299) · [💼 LinkedIn](https://www.linkedin.com/in/shubham-jamdar-2571271b3)
+
+</div>
+
 # Agentic Case-Routing Orchestrator
 
 > A LangGraph orchestration engine that investigates support cases with pluggable AI agents, critiques its own evidence, and **waits for a human to approve the drafted response** before a case can complete.
