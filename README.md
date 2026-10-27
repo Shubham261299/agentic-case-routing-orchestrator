@@ -1,25 +1,24 @@
-<div align="center">
-
-<img src=".github/banner.svg" width="100%" alt="Shubham AI Lab, system 01 of 07 (Docs Only · Source Proprietary): Case input → Router agent → Domain agents → Critic → Human approval → Outcome. Stack: LangGraph, FastAPI, Pydantic, Ollama, SQLite.">
-
-[🌐 Portfolio](https://shubham-ai-lab.vercel.app/) · [👤 GitHub profile](https://github.com/Shubham261299) · [💼 LinkedIn](https://www.linkedin.com/in/shubham-jamdar-2571271b3)
-
-</div>
+<img src="docs/images/portfolio-cover.webp" width="100%" alt="Agentic Case-Routing Orchestrator: conceptual project artwork matching the portfolio.">
 
 # Agentic Case-Routing Orchestrator
 
-> A LangGraph orchestration engine that investigates support cases with pluggable AI agents, critiques its own evidence, and **waits for a human to approve the drafted response** before a case can complete.
+### Specialists investigate. A person decides.
 
-![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-StateGraph_+_interrupt-1C3C3C)
-![FastAPI](https://img.shields.io/badge/FastAPI-Uvicorn-009688?logo=fastapi)
-![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063)
-![Ollama](https://img.shields.io/badge/Ollama-qwen2.5:14b-000000)
-![SQLite](https://img.shields.io/badge/SQLite-checkpoints_·_tracker-003B57?logo=sqlite)
+An orchestration layer that routes support cases to specialist services, critiques the evidence, and pauses for human approval.
 
-> **About the source code:** I built this project at my current employer, IDeaS Revenue Solutions (hotel revenue-management software), and the code is proprietary. This repository documents the project (architecture, flow, engineering decisions and results) so I can walk through it in detail.
+**Employer work · Documentation only. Working prototype with mocked domain agents; not deployed to a team. Proprietary source is not included.**
 
----
+**[Explore the case study ↗](https://shubham-ai-lab.vercel.app/work/case-routing)** · [Technical guide](#technical-guide) · [More projects](https://shubham-ai-lab.vercel.app/work)
+
+## Engineering receipt
+
+| Decision | Why it matters |
+| --- | --- |
+| Separate responsibilities | Specialist teams own domain logic; the orchestrator owns routing, state and review. |
+| Keep approval durable | Graph checkpoints preserve a case waiting for a human. |
+| Bound the loops | Re-planning and response revisions have explicit limits. |
+
+## Technical guide
 
 ## Why I built it
 
@@ -150,3 +149,4 @@ Planned, scaffolded and iterated with **Claude Code** as my main development too
 ---
 
 **Shubham Jamdar** · [LinkedIn](https://www.linkedin.com/in/shubham-jamdar-2571271b3) · [GitHub](https://github.com/Shubham261299)
+
